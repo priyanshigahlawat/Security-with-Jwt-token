@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/register.js"></script>
+    <script src="https://kit.fontawesome.com/8d5ad52456.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+        *{
+            margin: 0px;
+        }
+        body{
+            background-color: #f0f0f0;
+        }
+        #win{
+            height: 570px;
+            width: 700px;
+            margin: auto;
+            margin-top:2%;
+            border: 2px gray solid;
+            border-radius: 10px;
+            background-color: rgb(80, 68, 68);
+        }
+        #win:hover{
+            box-shadow: 0px 0px 5px 6px gray;
+        }
+        #dashboard{
+            width:600px;
+        }
+        .abc{
+            height:20px;
+        }
+        .btn{
+            width: 250px;
+        }
+        #remark{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <div id="win">
+        <div id="dashboard">
+            <div class="form">
+                <br><br>
+                <div class="form-floating mb-3 abc">
+                    <input type="text" class="form-control lid" id="registerRoll" placeholder="roll">
+                    <label for="registerRoll">Roll number</label>
+                </div><br>
+                <div class="form-floating mb-3 abc">
+                    <input type="text" class="form-control lage" id="registerName" placeholder="name">
+                    <label for="registerName">Name</label>
+                </div><br>
+                <div class="form-floating mb-3 abc">
+                    <input type="text" class="form-control lage" id="registerId" placeholder="id">
+                    <label for="registerId">Email id</label>
+                </div><br>
+                <div class="form-floating mb-3 abc">
+                    <input type="password" class="form-control lpass" id="registerPass" placeholder="Password">
+                    <label for="RegisterPass">Password</label>
+                </div><br>
+                <div class="form-floating mb-3 abc">
+                    <input type="text" class="form-control lage" id="registerAge" placeholder="age">
+                    <label for="registerAge">Age</label>
+                </div><br>
+                <div class="form-floating mb-3 abc">
+                    <input type="text" class="form-control lage" id="registerCollege" placeholder="college">
+                    <label for="registerName">College</label>
+                </div><br>
+                <div class="form-floating mb-3 abc">
+                    <input type="text" class="form-control lage" id="registerStream" placeholder="stream">
+                    <label for="registerName">Stream</label>
+                </div><br>
+                <br>
+                <button type="button" class="btn btn-outline-warning btn-lg" id="register">Register</button>
+                <a href="/login"><button type="button" class="btn btn-warning btn-lg">Go Back</button></a>
+                <div id="remark"></div>
+            </div>
+        </div>
+    </div>
+</center>
+</body>
+</html>
